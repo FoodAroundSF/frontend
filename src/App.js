@@ -5,7 +5,10 @@ import { useEffect } from 'react';
 
 function App() {
   const callApi = async()=>{
-    axios.get("/api").then((res)=>{console.log(res.data.test)});
+    axios.get("http://222.114.141.188:5000/api").then((res)=>{
+      console.log('axios')
+      console.log(res.data);
+      console.log(res.data.test)});
   };
 
   useEffect(()=>{
@@ -24,7 +27,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          hidasd  
         </a>
       </header>
     </div>
